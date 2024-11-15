@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Company</title>
+    <link rel="icon" href="img/Logo/5.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Header -->
+        <div class="top-header d-md-block d-none container py-4 d-flex justify-content-between">
+            <a href="index.html">
+                <img src="img/Logo/Bosch-logo.svg.png" alt="bosch" width="160px">
+              </a>
+        </div>
+        <!-- Bottom Header -->
+        <div class="bottom-header">
+            <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand d-md-none" href="#"><img src="img/Logo/3.png" alt="bosch" width="170px"></a>
+                    <button class="navbar-toggler bg-light d-md-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Products and services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mobility</a></li>
+                                    <li><a class="dropdown-item" href="#">At home</a></li>
+                                    <li><a class="dropdown-item" href="#">Industry and trades</a></li>
+                                    <li><a class="dropdown-item" href="#">Market-specific solutions</a></li>
+                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="company.html">Company</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            </li>
+                            <div class="ms-3">
+                                <a class="nav-link d-inline-block" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+                                </a>
+                                <a class="nav-link d-inline-block" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-globe2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                                    </svg></a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Cover -->
+        <section class="company-cover d-sm-block d-none">
+            <div class="cover-img">
+                <img src="img/Company/fallback-16x9_res_1280x720.webp" alt="company" width="100%">
+                <div class="cover-caption">
+                    <h1>Company</h1>
+                    <h2>About us</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Bosch -->
+        <section class="container about-bosch">
+            <h2 class="mb-5">Find More About Bosch</h2>
+            <div class="row row-cols-1 row-cols-md-1 g-2">
+                <div class="col-12 col-lg-6">
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/Company/4.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-4 h4">Leadership</h5>
+                                <p class="card-text">As a leading technology company, our aim is to help shape
+                                    tomorrow’s
+                                    world with technology that is “Invented for life.”</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/Company/5.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-4 h4">Research</h5>
+                                <p class="card-text">Research for research’s sake? That’s not how we work. We believe
+                                    that
+                                    research should always result in a tangible innovation. Something that changes
+                                    people’s
+                                    lives for the better. That’s why our innovations tend to pop up at all sorts of
+                                    different times in people’s day-to-day lives.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/Company/3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-4 h4">Our history</h5>
+                                <p class="card-text">In 1886, Robert Bosch founded the “Workshop for Precision Mechanics
+                                    and
+                                    Electrical Engineering” in Stuttgart. This was the birth of today‘s globally
+                                    operating
+                                    company. Right from the start, it was characterized by innovative strength and
+                                    social
+                                    commitment.
+                                    <br><br>
+                                    Robert Bosch was a man of many interests, including nature, agriculture, health,
+                                    education, and social policy. His biggest passion, though, was technology. Above
+                                    all, he was drawn to any kind of new technological innovation. As a young precision
+                                    mechanic, he moved from Ulm in southern Germany to New York in 1884 so that he could
+                                    follow the progress of technology. He approached the world with a curious and open
+                                    mind his entire life.
+                                    <br><br>
+                                    Anyone who wishes to shape the future has to know their past. By looking at Bosch’s
+                                    rich heritage, we can pinpoint what makes us special and reflect on where our
+                                    journey may take us next. We invite you to browse our history blog, with its
+                                    intriguing posts from more than 130 years of Bosch history.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/Company/2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-4 h4">Hand in hand: entrepreneurial thinking and social
+                                    commitment</h5>
+                                <p class="card-text">As a privately owned company, we act independently of the stock
+                                    markets. Through Robert Bosch Stiftung, a charitable foundation, our profits are
+                                    used to
+                                    benefit society, the environment, and future generations — sustainably and for the
+                                    long-term.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/Company/environment-climate-protection_res_640x360.webp" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title my-4 h4">We take responsibility</h5>
+                                <p class="card-text">For us, sustainability means securing the company’s long-term
+                                    success
+                                    while at the same time protecting the natural resources on which present and future
+                                    generations depend. Ecology is thus a driver of innovation. At the same time, we
+                                    demonstrate a particularly high level of corporate social responsibility — both
+                                    within
+                                    the company and beyond.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glance -->
+        <section class="glance container">
+            <div>
+                <h2>Bosch at a glance</h2>
+                <p>Sales revenue, associates, locations — key figures and brands at a glance
+                    (figures as of December 31, 2022 | values rounded)</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center mt-4">
+                <div class="col">
+                    <div class="card py-4 h-100">
+                        <i class="fas fa-users"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">421,300</h5>
+                            <p class="card-text">associates worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card py-4 h-100">
+                        <i class="fas fa-euro-sign"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">88.2</h5>
+                            <p class="card-text">billion euros sales revenue</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card py-4 h-100">
+                        <i class="fas fa-search"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">85,500</h5>
+                            <p class="card-text">researchers and developers worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card py-4 h-100">
+                        <i class="fa fa-location-arrow"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">468</h5>
+                            <p class="card-text">subsidiaries and regional companies in some 60 countries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card py-4 h-100">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">3.8</h5>
+                            <p class="card-text">billion euros EBIT from operations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card py-4 h-100">
+                        <i class="fas fa-money-check-alt"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">7.2</h5>
+                            <p class="card-text">billion euros expenditure on research and development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our mission statement -->
+        <section class="statement container d-lg-block d-none">
+            <div class="card">
+                <img src="img/Company/bosch-globe-csr_res_800x450.webp" class="card-img col-12 col-md-6" alt="...">
+                <div class="card-img-overlay w-50 col-12 col-md-6">
+                    <h3 class="mb-4">“We are Bosch” — our mission statement</h3>
+                    <p class="card-text">We are motivated by the desire to develop products that are “Invented for
+                        life,” that spark enthusiasm, that improve quality of life, and that help conserve natural
+                        resources. Our “We are Bosch” mission statement reflects this. It summarizes our values, our
+                        strengths, and our strategic orientation.
+                        The mission is based on seven central values, which shape our corporate culture – ranging from a
+                        focus on the future and earnings to cultural diversity. Responsibility and sustainability are
+                        part of this set of values and thus of our actions.</p>
+                    <button type="button" class="btn mt-3">Our mission statement</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Worldwide locations -->
+        <section class="worldwide container">
+            <div>
+                <h2>A selection of our worldwide locations</h2>
+                <p class="mb-5">Take a look at some of our Bosch locations all over the world. Each location has something unique to
+                    offer to our associates.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-abstatt_res_400x225.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Abstatt, Germany</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-bishan_res_400x225.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Bishan, Singapore</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-budapest_res_400x225.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Budapest, Hungary</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-cluj_res_400x225.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Cluj, Romania</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-guadalajara_res_400x225.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Guadalajara, Mexico</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-ho-chi-minh-city_res_400x225.webp" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Ho Chi Minh City, Vietnam</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-istanbul_res_400x225.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Küçükyalı, Turkey</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="img/Company/bosch-plymouth_res_400x225.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Plymouth, United States</h6>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Why Buy Bosch -->
+        <hr class="m-0">
+        <section class="buy">
+            <div class="container py-5">
+                <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card h-100">
+                            <img src="img/Buy/1.webp" class="card-img-top" alt="employed">
+                            <div class="card-body">
+                                <h5 class="card-title">Local engineers employed and trained by Bosch.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card h-100">
+                            <img src="img/Buy/2.webp" class="card-img-top" alt="replacement">
+                            <div class="card-body">
+                                <h5 class="card-title">Original Bosch replacement spare parts.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card h-100">
+                            <img src="img/Buy/3.webp" class="card-img-top" alt="warranty">
+                            <div class="card-body">
+                                <h5 class="card-title">Repairs both inside and outside of warranty.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card h-100">
+                            <img src="img/Buy/4.webp" class="card-img-top" alt="support">
+                            <div class="card-body">
+                                <h5 class="card-title">Expert product advice and support at all times.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0">
+        <div class="container p-5">
+            <div class="top-footer row">
+                <div class="col-12 col-md-6 col-lg-3 text-start ps-0 pe-5">
+                    <img src="img/Logo/Bosch-logo.svg.png" alt="bosch" width="150px">
+                    <div class="mt-4">
+                        <div class="search-container">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search..."
+                                    aria-label="Search">
+                                <button class="btn" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social my-4">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube ps-2"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter ps-2"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in ps-2"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="list-group col-12 col-md-6 col-lg-3 pt-3 pe-0">
+                    <h6>Links</h6>
+                    <a href="#">Press</a>
+                    <a href="#">Research</a>
+                    <a href="#">Sustainability</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="list-group col-12 col-md-6 col-lg-3 pt-3 pe-0">
+                    <h6>Policies</h6>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of use</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Data protection notice</a>
+                </div>
+                <div class="list-group col-12 col-md-6 col-lg-3 pt-3 pe-0">
+                    <h6>Support</h6>
+                    <a href="#">Help</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Purchasing and logistics</a>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-footer text-center">
+                <span>© Robert Bosch GmbH 2024, all rights reserved | Phone: +49 711 400 40990</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

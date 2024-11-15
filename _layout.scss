@@ -1,0 +1,631 @@
+* {
+    font-family: lato;
+}
+
+header {
+
+    .bottom-header {
+
+        .navbar {
+            background-color: $color-primary;
+
+            .nav-link {
+                color: #ffffff;
+                font-weight: 600;
+
+                a {
+                    transition: .7s;
+                }
+
+                &:hover {
+                    color: $color-tertiary;
+                }
+            }
+        }
+    }
+}
+
+section.slider {
+    z-index: -1;
+
+    .slider-caption {
+        top: 70%;
+        left: 50%;
+        color: #ffffff;
+
+        a {
+            svg {
+                animation-name: move-slider;
+                animation-duration: .7s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+section.slider-cards {
+    background-color: #ffffff;
+    margin-top: -3.5%;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+    @include centering();
+
+    @media screen and (max-width:576px) {
+        margin-top: 0;
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            .caption-card {
+                left: 0;
+            }
+        }
+
+        &:hover {
+            .caption-card-right {
+                right: 0;
+            }
+        }
+
+        .caption-card-right {
+            width: 100%;
+            height: 100%;
+            right: -100%;
+            top: 0;
+            position: absolute;
+            background-color: #00305892;
+            @include centering();
+            transition: .7s;
+
+            h2 {
+                color: #ffffff;
+            }
+        }
+
+        .caption-card {
+            width: 100%;
+            height: 100%;
+            left: -100%;
+            top: 0;
+            position: absolute;
+            background-color: #00305892;
+            @include centering();
+            transition: .7s;
+
+            h2 {
+                color: #ffffff;
+            }
+        }
+
+    }
+
+
+
+}
+
+section.products {
+    margin-top: $section-gap;
+
+    .title {
+        @include title;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+
+        i {
+            color: #092230;
+            font-size: 25px;
+        }
+    }
+
+    .card {
+        background-color: $color-secondary;
+        overflow: hidden;
+
+        img {
+            transition: .8s;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+
+            a {
+                color: $color-primary;
+            }
+        }
+
+        a {
+            @include link-color();
+        }
+    }
+}
+
+
+section.topic {
+    margin-top: $section-gap;
+
+    .none-radius {
+        @include none-radius();
+    }
+
+    .caption-topic {
+        top: 20%;
+        left: 50%;
+        height: 300px;
+        transform: translateX(-50%);
+        backdrop-filter: blur(5px);
+        background: rgba(255, 255, 255, 0.349);
+
+        h4 {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .button-color {
+            @include button-color();
+        }
+    }
+
+}
+
+section.explore {
+    margin-top: $section-gap;
+    margin-bottom: $section-gap;
+
+    .title {
+        @include title;
+    }
+
+    .card {
+        h5 {
+            transition: .8s;
+        }
+
+        &:hover {
+            a {
+                h5 {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .card-body {
+
+            h5 {
+                font-weight: bold;
+                color: #092230;
+            }
+
+            .card-text {
+                @include paragraph;
+            }
+        }
+
+        .card-footer {
+            // background-color: $color-tertiary;
+            // color: $color-secondary;
+            font-size: 13px;
+        }
+    }
+}
+
+section.buy {
+    background-color: $color-secondary;
+
+    .card {
+        border: none;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #555B6D;
+    }
+}
+
+footer {
+    background-color: $color-secondary;
+    vertical-align: middle;
+
+    h6 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-tertiary;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    .social {
+        i {
+            font-size: 20px;
+        }
+    }
+
+    .search-container {
+        .btn {
+            color: #003058;
+            border-color: #003058;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #003058;
+            }
+        }
+
+        .text-start {
+            text-align: left;
+        }
+    }
+
+    .bottom-footer {
+        span {
+            color: $color-tertiary;
+        }
+    }
+}
+
+
+// Company
+
+section.company-cover {
+    .cover-img {
+        position: relative;
+
+        .cover-caption {
+            position: absolute;
+            top: 15%;
+            right: 5%;
+            color: $color-tertiary;
+
+            h1 {
+                position: relative;
+                font-size: 75px;
+            }
+
+            h1::after {
+                content: "";
+                width: 100%;
+                background-color: $color-primary;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+section.about-bosch {
+    margin-top: 5em;
+
+    h2 {
+        color: $color-tertiary;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+
+        .card-body {
+            text-align: left;
+            position: absolute;
+            height: 100%;
+            bottom: -100%;
+            left: 0;
+            backdrop-filter: blur(2px);
+            background-color: #bdbdbd67;
+            transition: .7s;
+            padding: 30px;
+
+            @media (max-width:576px) {
+                visibility: hidden;
+            }
+
+            .card-title {
+                color: #EF2127;
+                font-weight: bold;
+            }
+
+            p {
+                color: #003058;
+                font-size: 18px;
+            }
+        }
+
+        &:hover.card {
+            .card-body {
+                bottom: 0;
+            }
+        }
+    }
+}
+
+section.glance {
+    margin-top: $section-gap;
+
+    h2 {
+        color: $color-tertiary;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    p {
+        color: #555B6D;
+    }
+
+    .card {
+        background-color: $color-secondary;
+
+        i {
+            font-size: 40px;
+            color: $color-primary;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        h5 {
+            color: $color-tertiary;
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+section.statement {
+    margin-top: $section-gap;
+
+    .card {
+        border: none;
+
+        .card-img-overlay {
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+
+            h3 {
+                font-weight: bold;
+                color: $color-tertiary;
+            }
+
+            p {
+                color: #555B6D;
+            }
+
+            .btn {
+                background-color: $color-primary;
+                color: #ffffff;
+                font-size: 18px;
+                transition: .7s;
+                padding: 8px 24px;
+
+                &:hover {
+                    background-color: $color-tertiary;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+}
+
+section.worldwide {
+    margin-top: $section-gap;
+    margin-bottom: $section-gap;
+
+    h2 {
+        color: $color-tertiary;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    p {
+        color: #555B6D;
+    }
+
+    .card {
+        overflow: hidden;
+
+        h6 {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-tertiary;
+            transition: .7s;
+
+            i {
+                transition: .7s;
+                color: $color-primary;
+            }
+
+            img {
+                transition: .7s;
+            }
+        }
+
+        &:hover {
+            a {
+                color: $color-primary;
+
+                img {
+                    transform: scale(1.05);
+                }
+
+                i {
+                    transform: translateY(3px);
+                }
+            }
+        }
+    }
+}
+
+// Contact
+
+section.contact-cover {
+    .cover-img {
+        position: relative;
+
+        .cover-caption {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            color: $color-tertiary;
+
+            h1 {
+                position: relative;
+                font-size: 80px;
+            }
+
+            h1::after {
+                content: "";
+                width: 100%;
+                background-color: red;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+section.mail {
+
+    background-color: #003058;
+
+    p {
+        color: $color-secondary;
+    }
+
+    .form {
+        backdrop-filter: blur(10px);
+        background-color: $color-secondary;
+        color: $color-tertiary;
+        box-shadow: 4px 4px 8px 4px rgba(147, 147, 147, 0.401);
+
+        .btn {
+            background-color: $color-tertiary;
+            color: #ffffff;
+            font-size: 18px;
+            transition: .7s;
+            padding: 8px 24px;
+
+            &:hover {
+                background-color: $color-primary;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .form-check{
+        color: $color-primary;
+       
+    }
+    .form-check-input{
+        background-color: #EF2127;
+    }
+
+    .form-label{
+        font-weight: bold;
+    }
+}
+
+
+section.call {
+    text-align: center;
+
+    .call-box {
+        background-color: $color-secondary;
+        margin: 0;
+
+        .call-icon {
+            padding: 50px;
+            color: $color-tertiary;
+
+            a {
+                text-decoration: none;
+
+                svg {
+                    color: $color-primary;
+                    transition: .7s;
+                }
+
+                span {
+                    padding-left: 4px;
+                    vertical-align: middle;
+                    font-size: 18px;
+                    color: $color-tertiary;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+
+section.services {
+    padding-top: $section-gap;
+    background-color: $color-secondary;
+
+    h2 {
+        color: $color-tertiary;
+        font-weight: bold;
+    }
+
+    .card {
+        &:hover {
+            svg {
+                transform: translateX(4px);
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            h5 {
+                font-weight: bold;
+                color: $color-primary;
+            }
+
+            p {
+                color: $color-tertiary;
+                font-size: 16px;
+                font-weight: 600;
+
+                svg {
+                    transition: .7s;
+                }
+            }
+        }
+    }
+}
+
+section.map {
+    background-color: $color-secondary;
+    padding-top: $section-gap;
+    padding-bottom: 6em;
+}
